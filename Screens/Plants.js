@@ -19,7 +19,7 @@ import type from "../type";
 import data from "../data";
 import { Feather } from "@expo/vector-icons";
 
-const { width, height } = Dimensions.get("screen");
+const { width, height, scale } = Dimensions.get("screen");
 const AnimatedImageBackground =
   Animated.createAnimatedComponent(ImageBackground);
 
@@ -30,6 +30,7 @@ const PlantScreen = () => {
 
   const [typeOfThePlant, setTypeOfThePlant] = React.useState(type[0]);
 
+  console.log(width);
   function drawer() {
     return (
       <View style={{ flex: 0.3, zIndex: 1 }}>

@@ -212,7 +212,7 @@ function buyButton(item) {
         backgroundColor: "#32CD32",
         alignSelf: "center",
         borderRadius: 10,
-        marginTop: width * 0.2,
+        marginTop: width * 0.15,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-around",
